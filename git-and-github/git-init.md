@@ -1,10 +1,12 @@
 # 프로젝트를 Github에서 관리하기
 
-Git : Version Control & Cooperation
+_Git_ : Version Control & Cooperation
 
-Github : Git으로 관리하고 있는 코드를 저장하는 저장소(repository)
+_Github_ : Git으로 관리하고 있는 코드를 저장하는 저장소(repository)
 
-Local Repository
+---
+
+### Local Repository
 
 ```markdown
 # Local Repository 만들기
@@ -21,7 +23,7 @@ git status # Local Repository 상황 (staging Area) 확인
 git commit -m "커밋 메시지" # 현재 staging area에 있는 것들 커밋으로 남기기
 ```
 
-→ Github의 Remote Repository
+### Github의 Remote Repository
 
 ```markdown
 git remote -v
@@ -98,6 +100,7 @@ Git이 현재 인식하고 있는 프로젝트 관련 내용들 출력 (문제 �
 위의 커맨드를 한번 실행하고 난 후에는 git push라고만 쳐도 로컬 레포지토리의 내용을 리모트 레포지토리에 올릴 수 있습니다.
 
 **`git pull`**
+
 바로 위의 위에 있는 커맨드를 한번 실행하고 난 후에는 git pull이라고만 쳐도 리모트 레포지토리의 내용을 로컬 레포지토리로 가져옵니다.
 
 **`git clone [프로젝트의 GitHub 상 주소]`**
@@ -126,7 +129,8 @@ GitHub에 있는 프로젝트를 내 컴퓨터로 가져오기
 
 **`git config alias.[별명] [커맨드]`**
 
-like, [**`git config alias. history log --pretty=oneline`**]
+like, **`git config alias. history log --pretty=oneline`**,
+
 길이가 긴 커맨드에 별명을 붙여서 이후로는 별명으로도 해당 커맨드를 실행할 수 있게 설정
 
 **`git diff [커밋 A의 아이디] [커밋 B의 아이디]`**
@@ -229,14 +233,11 @@ A, B 브랜치가 있는 상태에서 지금 HEAD가 A 브랜치를 가리킬 �
 
 ## **! 그 밖에 알아야할 사실**
 
-(1) **`git commit`**
+(1) **`git commit`** 이라고만 쓰고 실행하면 커밋 메시지를 입력할 수 있는 텍스트 에디터 창(Vim) ->
+거기서 커밋 메시지를 입력하고 저장하면 커밋이 됨
 
-이라고만 쓰고 실행하면 커밋 메시지를 입력할 수 있는 텍스트 에디터 창(Vim)이 뜹니다.
-거기서 커밋 메시지를 입력하고 저장하고 나면 커밋이 이루어집니다.
+(2) **`git push`** 와 **`git pull`** 은 그 작업 단위가 브랜치임
 
-- Vim 명령어 `:wq`
+예를 들어, main 브랜치에서 git push를 하면 main 브랜치의 내용만 리모트 레포지토리의 main 브랜치로 전송
 
-(2) **`git push`** 와 **`git pull`**
-
-은 그 작업 단위가 브랜치입니다.
-예를 들어, main 브랜치에서 git push를 하면 main 브랜치의 내용만 리모트 레포지토리의 main 브랜치로 전송되지, premium 브랜치의 내용이 전송되는 것은 아닙니다. (git push에 --all이라는 옵션을 주면 모든 브랜치의 내용을 전송할 수 있기는 합니다.)
+하지만, `git push`에 `--all`이라는 옵션을 주면 모든 브랜치의 내용을 전송할 수 있음
