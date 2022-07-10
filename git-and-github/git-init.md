@@ -6,9 +6,6 @@ _Github_ : Git으로 관리하고 있는 코드를 저장하는 저장소(reposi
 
 ---
 
-
-![repository concept](https://user-images.githubusercontent.com/49124248/178134688-3e7a57b5-2e9d-4c05-bfb6-d41b5d1adf3d.png)
-
 ### Local Repository
 
 ```markdown
@@ -195,6 +192,10 @@ like, **`git config alias. history log --pretty=oneline`**,
 **`git revert`**
 
 특정 커밋에서 이루어진 작업을 되돌리는(취소하는) 커밋을 새로 생성
+
+
+![repository concept](https://user-images.githubusercontent.com/49124248/178134688-3e7a57b5-2e9d-4c05-bfb6-d41b5d1adf3d.png)
+
 
 ---
 
