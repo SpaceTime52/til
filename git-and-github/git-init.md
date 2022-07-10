@@ -6,7 +6,8 @@ _Github_ : Git으로 관리하고 있는 코드를 저장하는 저장소(reposi
 
 ---
 
-<img width="886" alt="스크린샷 2021-01-19 오전 10 52 05" src="https://user-images.githubusercontent.com/49124248/178134688-3e7a57b5-2e9d-4c05-bfb6-d41b5d1adf3d.png">
+
+![repository concept](https://user-images.githubusercontent.com/49124248/178134688-3e7a57b5-2e9d-4c05-bfb6-d41b5d1adf3d.png)
 
 ### Local Repository
 
