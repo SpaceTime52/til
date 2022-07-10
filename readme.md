@@ -2,9 +2,9 @@
 
 - Today I Learned 오늘 배운 것을 기록합니다.
 
-## 목차
+## 목차Cancel changes
 
-### [git & github](/git-and-gihub/)
+### [git & github](/git-and-github)
 
 ---
 
